@@ -27,3 +27,5 @@ AutoTextArea.defaultProps = {
     placeholder: 'enter...',
     onChange: () => {}
 }
+
+export default AutoTextArea

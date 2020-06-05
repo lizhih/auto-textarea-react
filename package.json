@@ -1,6 +1,6 @@
 {
   "name": "auto-textarea-react",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "A react component to automatically adjust textarea height to fit text",
   "main": "dist/bundle.js",
   "scripts": {
