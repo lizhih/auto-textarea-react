@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-export const AutoTextArea = ({className, defaultValue, placeholder, onChange}) => {
+export const AutoTextAreaReact = ({className, defaultValue, placeholder, onChange}) => {
     const outerRef = useRef();
     const textRef = useRef();
     useEffect(() => {
@@ -21,9 +21,11 @@ export const AutoTextArea = ({className, defaultValue, placeholder, onChange}) =
     }, [])
     return <div className={className} ref={outerRef}><textarea ref={textRef} placeholder={placeholder} defaultValue={defaultValue} onChange={onChange}></textarea></div>
 }
-AutoTextArea.defaultProps = {
+AutoTextAreaReact.defaultProps = {
     className: '',
     defaultValue: '',
     placeholder: 'enter...',
     onChange: () => {}
 }
+
+export default AutoTextAreaReact
